@@ -4,6 +4,7 @@ import muteVolumeImg from './images/mute-volume.png';
 import halfVolumeImg from './images/half-volume.png';
 import maxVolumeImg from './images/max-volume.png';
 
+
 function Settings() {
   const [volume, setVolume] = useState(50);
   const [voice, setVoice] = useState('male');
@@ -78,11 +79,14 @@ function Settings() {
           <span className="big-abc">ABC</span>
         </div>
         <span className="text-size-value">{textSize}px</span> {}
+        
       </div>
+      
       <button className="reset-button" onClick={resetSettings}>
         Reset to Default
       </button>
     </div>
+    
     );
   }
 
